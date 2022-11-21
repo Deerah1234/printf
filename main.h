@@ -7,7 +7,7 @@
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
 
-/* FLAGS */
+/* FLAG */
 #define F_MINUS 1
 #define F_PLUS 2
 #define F_ZERO 4
@@ -43,7 +43,7 @@ int _printf(const char *format, ...);
 int handle_print(const char *fmt, int *i,
 va_list list, char buffer[], int flags, int width, int precision, int size);
 
-/****************** FUNCTIONS ******************/
+/****************** FUNCTION ******************/
 
 /* Funtions to print chars and strings */
 int print_char(va_list types, char buffer[],
