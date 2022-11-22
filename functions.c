@@ -78,21 +78,14 @@ int print_string(va_list types, char buffer[],
 }
 /************************* PRINT PERCENT SIGN *************************/
 /**
- * print_percent - pass the percent sing
- * @args: string  argument
- * Return: return the percent sing
- *
+ * print_percent -  print percent character
+ * @args: char
+ * Return: percent character
  */
-int print_percent(va_list args)
-{
-	char *str;
 
-	str = "%";
-	if (va_arg(args, int) == *str)
-	{
-		return (*str);
-	}
-	return (*str);
+int print_percent(va_list args __attribute__((unused)))
+{
+	return (_putchar('%'));
 }
 
 /************************* PRINT INT *************************/
