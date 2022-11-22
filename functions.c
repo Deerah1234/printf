@@ -82,7 +82,6 @@ int print_string(va_list types, char buffer[],
  * @args: char
  * Return: percent character
  */
-
 int print_percent(va_list args __attribute__((unused)))
 {
 	return (_putchar('%'));
